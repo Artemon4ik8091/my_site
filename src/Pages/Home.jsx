@@ -81,8 +81,8 @@ const WORDS = ["Just student", "Technology Enthusiast", "Contact: TG @justuser_3
 const TECH_STACK = ["C#", "Python", "Kotlin", "C++"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/Artemon4ik8091" },
-  //{ icon: Linkedin, link: "https://www.linkedin.com/in/ekizr/" },
-  //{ icon: Instagram, link: "https://www.instagram.com/ekizr_/?hl=id" }
+  //{ icon: Linkedin, link: "https://www.linkedin.com/in/aswer/" },
+  //{ icon: Instagram, link: "https://www.instagram.com/aswer_/?hl=id" }
 ];
 
 const Home = () => {
@@ -191,6 +191,12 @@ const Home = () => {
                   {TECH_STACK.map((tech, index) => (
                     <TechStack key={index} tech={tech} />
                   ))}
+                </div>
+
+                {/* CTA Buttons */}
+                <div className="flex flex-row gap-3 w-full justify-start" data-aos="fade-up" data-aos-delay="1400">
+                  <CTAButton href="#Portofolio" text="Projects" icon={ExternalLink} />
+                  <CTAButton href="#Contact" text="Contact" icon={Mail} />
                 </div>
 
                 {/* Social Links */}

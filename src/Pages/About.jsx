@@ -159,15 +159,15 @@ const AboutPage = () => {
     {
       icon: Code,
       color: "from-[#6366f1] to-[#a855f7]",
-      value: 8,
+      value: totalProjects,
       label: "Total Projects",
-      description: "Innovative web solutions crafted",
+      description: "Innovative solutions crafted",
       animation: "fade-right",
     },
     {
       icon: Award,
       color: "from-[#a855f7] to-[#6366f1]",
-      value: 1,
+      value: totalCertificates,
       label: "Certificates",
       description: "Professional skills validated",
       animation: "fade-up",
@@ -214,10 +214,20 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              Student of the Faculty of Computer Technology and Programming
-              who is interested in developing Python, C# and Kotlin applications.
-              Focuses on quality and "wow effect" in his projects.
+              Student of the Faculty of Computer Technology and Programming who is interested in developing Python, C# and Kotlin applications. Focuses on quality and "wow effect" in his projects.
             </p>
+
+            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
+              <a href="#Portofolio" className="w-full lg:w-auto">
+              <button 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border border-[#a855f7]/50 text-[#a855f7] font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 hover:bg-[#a855f7]/10 animate-bounce-slow delay-200"
+              >
+                <Code className="w-4 h-4 sm:w-5 sm:h-5" /> View Projects
+              </button>
+              </a>
+            </div>
           </div>
 
           <ProfileImage />
