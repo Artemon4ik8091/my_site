@@ -124,14 +124,14 @@ const ContactPage = () => {
                   Get in Touch
                 </h2>
                 <p className="text-gray-400">
-                  Have something to discuss? Send me a message and let's talk.
+                  Have something to discuss? Send me a message and let's talk. Sorry, not working.
                 </p>
               </div>
               <Share2 className="w-10 h-10 text-[#6366f1] opacity-50" />
             </div>
 
             <form 
-              action="https://formsubmit.co/ekizulfarrachman@gmail.com"
+              action="https://formsubmit.co/aswert092@gmail.com"
               method="POST"
               onSubmit={handleSubmit}
               className="space-y-6"
@@ -198,7 +198,7 @@ const ContactPage = () => {
                 className="w-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#6366f1]/20 active:scale-[0.98] flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 <Send className="w-5 h-5" />
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? 'Sending...' : 'Send message'}
               </button>
             </form>
 
